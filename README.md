@@ -176,7 +176,7 @@ python-telegram-bot==20.0a6
 
 Once it's running, open your Telegram app, search for your bot, and send a skin image to see it in action! ⚡
 
----
+
 
 ## 🎯 Future Improvements
 
