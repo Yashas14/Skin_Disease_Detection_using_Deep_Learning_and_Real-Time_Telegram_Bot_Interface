@@ -30,7 +30,7 @@ async def photo_handler(update: Update, context: CallbackContext) -> None:
     os.remove("image.jpg")
 
 def main():
-    application = Application.builder().token('6234021791:AAEECiivMqB2qnAdsCWZCRY0MnpbzPa53Kw').build()
+    application = Application.builder().token('Token_From_Telegram_Bot').build()
     
     
     start_handler = CommandHandler('start', start)
