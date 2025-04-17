@@ -115,7 +115,7 @@ The bot is built using the [`python-telegram-bot`](https://github.com/python-tel
 
 ```python
 application = Application.builder().token('YOUR_TELEGRAM_BOT_TOKEN').build()
-
+```
 
 
 ## 🧪 Model Training
