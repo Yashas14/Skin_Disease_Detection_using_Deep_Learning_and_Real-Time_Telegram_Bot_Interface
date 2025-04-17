@@ -1,3 +1,9 @@
+# 🧴 DermDetect: AI-Powered Skin Disease Classifier via Telegram 📱🧠  
+### Real-Time Dermatology Assistant with Deep Learning & Chatbot Integration  
+[![Conference Paper](https://img.shields.io/badge/ICIITCEE--2025-Paper-blue)](https://github.com/Yashas14)  
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Explore%20Code-2ea44f)](https://github.com/Yashas14/Skin-Disease-Detector-Bot)
+
+
 # 🧠 Skin Disease Classifier with Telegram Bot Interface
 
 An end-to-end AI-powered solution for **real-time skin disease detection** using **Deep Learning (InceptionV3 CNN)** and a **Telegram Bot** interface. This project enables users to upload skin images via Telegram and receive instant predictions about common skin conditions such as *Tinea Ringworm*, *Candidiasis*, and *Urticaria (Hives)*.
