@@ -115,3 +115,91 @@ The bot is built using the [`python-telegram-bot`](https://github.com/python-tel
 
 ```python
 application = Application.builder().token('YOUR_TELEGRAM_BOT_TOKEN').build()
+
+
+
+## 🧪 Model Training
+
+Training the AI to become your skin specialist wasn't easy — but here's how we taught it to *see*.
+
+| Step                     | Description                                                                 |
+|--------------------------|-----------------------------------------------------------------------------|
+| 🖼️ **Image Preprocessing** | Resized all images to `300x300`, normalized pixel values between 0-1         |
+| 🧠 **Model Architecture**   | Transfer Learning using **InceptionV3** (pretrained on ImageNet)            |
+| 🧪 **Fine-Tuning**          | Last few layers unfrozen and retrained for domain-specific features         |
+| 🔧 **Loss Function**        | Categorical Crossentropy for multi-class classification                    |
+| 🚀 **Optimizer**            | Adam with a learning rate of 0.0001                                         |
+| 📊 **Metrics**              | Accuracy and Validation Accuracy tracked during training                   |
+
+The model was trained on **Google Colab** for flexibility and speed, and saved in `.keras` format for lightweight deployment.
+
+
+
+## 🖥️ Local Setup
+
+Want to try it yourself? Here's how to launch your very own **AI skin bot** locally 🚀
+
+### 🔧 Prerequisites
+- Python 3.8 or higher
+- Telegram Bot Token (create one via [@BotFather](https://t.me/BotFather))
+- A trained `.keras` model (included or replaceable)
+
+### 🪄 Installation Steps
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/Yashas14/Skin-Disease-Detector-Bot.git
+cd Skin-Disease-Detector-Bot
+
+# 2. Create and activate a virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Replace your Telegram bot token in `telegram_bot_interface_new.py`
+application = Application.builder().token('YOUR_BOT_TOKEN').build()
+
+# 5. Run the bot
+python telegram_bot_interface_new.py
+```
+
+### 📦 Requirements
+
+```txt
+tensorflow
+numpy
+Pillow
+python-telegram-bot==20.0a6
+```
+
+Once it's running, open your Telegram app, search for your bot, and send a skin image to see it in action! ⚡
+
+---
+
+## 🎯 Future Improvements
+
+This is just the beginning. Here's what’s coming next for **DermDetect**:
+
+| Improvement                        | Goal                                                                 |
+|------------------------------------|----------------------------------------------------------------------|
+| 🧬 **Expand Disease Categories**     | Add more conditions like Eczema, Psoriasis, Acne, etc.               |
+| ☁️ **Cloud Deployment**             | Host the model via Flask/FastAPI on AWS, GCP, or Railway             |
+| 🔍 **Explainable AI**               | Integrate Grad-CAM or LIME for visual heatmap-based predictions      |
+| 🌍 **Multilingual Bot Support**     | Enable diagnosis in regional languages like Hindi, Kannada, Tamil   |
+| 📉 **Model Optimization**           | Reduce size with quantization or ONNX conversion for mobile use      |
+| 👨‍⚕️ **Doctor Feedback Loop**        | Add expert feedback to improve model accuracy over time              |
+| 📲 **Mobile App Integration**       | Extend beyond Telegram — bring the model to Android/iOS apps         |
+
+> ⚡ *We’re committed to improving accessibility, accuracy, and trust in AI-powered health tech.*
+
+
+## 📫 Contact
+
+For questions, suggestions, or collaboration ideas, reach out to:  
+**Yashas D**  
+📧 [GitHub Profile](https://github.com/Yashas14)  
+🌐 [Project Repository](https://github.com/Yashas14/Seamless_Interaction_through_Gesture_Recognition)
+🔗 **LinkedIn**: [Yashas D on LinkedIn](https://www.linkedin.com/in/yashasd2004/) 
+
